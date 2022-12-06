@@ -1,0 +1,183 @@
+:root{
+    --blu:#3B6AD1;
+    --purp:#5C00A3;
+    --sky:#9adaf3;
+    --tomato:#F79359;
+    --fire:#E61919;
+  }
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    max-height: 300vh;
+    background:linear-gradient(120deg,var(--purp),var(--blu), var(--sky));
+    position: relative;
+}
+
+
+#navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    background: linear-gradient(var(--fire),var(--tomato));
+    font-family: 'New Rocker';
+    border-bottom: 4px solid var(--blu);
+}
+#navbar h1{
+    color:  var(--sky);
+    padding-left: 15px;
+    font-weight: normal;
+}
+ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 20;
+}
+li{margin: auto;
+    padding: 20px;
+}
+a{  font-size: 20px;
+    color: var(--sky);
+    text-decoration: none;
+}
+  /* Home Section */
+#Home{ background:linear-gradient(120deg,black, var(--purp),var(--blu));
+    font-family: 'New Rocker';
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    padding-top: 120px;
+    padding-bottom: 150px;
+    margin: auto;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+}
+#Home h1{
+    padding: 10px 20px;
+    color:  var(--fire);
+    font-weight: normal;
+    font-size: 40px;
+    
+}
+#Home p{
+    font-size: 25px;
+    padding: 10px 20px;
+    color:  var(--fire);
+}
+  /* Home Section End */
+  /*About Section*/
+#About{  background:linear-gradient(120deg,var(--tomato), yellow);
+    font-family: 'Shojumaru';
+    width:80%;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 110px;
+    z-index:-1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#About h1{
+    background:linear-gradient(120deg,black, var(--purp),var(--blu));
+    color: var(--sky);
+    font-weight: normal;
+    border-bottom: solid salmon;
+    border-radius: 20px;
+    padding:10px
+}
+#About p{
+    font-family: 'New Rocker';
+    font-size:20px;
+    padding: 2px;
+}
+h2{
+    color:  yellow;
+    padding: 40px;
+    border: 8px solid tomato;
+    border-radius:100%;
+    text-align: center;
+    background-color:#3B6AD1;
+    font-weight: normal;
+    margin: 10px;
+}
+img{
+    width: 30%;
+    margin: 10px;
+    border: 7px solid tomato;
+    border-radius: 10px;
+}
+.img-flex{
+    display: flex;
+}
+  /*About Section End*/
+  /*Portfolio Section*/
+#Portfolio{ background:linear-gradient(-120deg,blue,pink, purple, salmon, yellowgreen, var(--tomato), yellow);
+    font-family: 'Shojumaru';
+    width:80%;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 110px;
+    z-index:-1;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#portfolio > h1{
+    text-align: center;
+}
+.project-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1178a1;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.project-box h1{
+    padding-bottom: 50px;
+}
+.project-content{
+    display: flex;
+}
+  /*Portfolio Section End*/
+footer {
+    padding: 2rem;
+    background: linear-gradient(var(--fire),var(--tomato));
+    border-top: 4px solid var(--blu);
+    color: var(--purp);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    margin: 0 15px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+    img {
+      width: 100px;
+      height: 140px;
+    }
+  }
